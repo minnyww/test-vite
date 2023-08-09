@@ -5,9 +5,9 @@ import path from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve("src", "src/components/index.jsx"),
+      entry: path.resolve("src", "index.ts"),
       name: "react-library-scaffold",
-      fileName: (format) => `react-library-scaffold.${format}.js`,
+      fileName: (format) => `index.${format}.ts`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
